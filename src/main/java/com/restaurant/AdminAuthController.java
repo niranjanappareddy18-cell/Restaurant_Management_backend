@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://restaurant-management-frontend.vercel.app"})
 public class AdminAuthController {
 
     @Value("${admin.password}")

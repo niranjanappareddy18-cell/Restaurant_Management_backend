@@ -9,7 +9,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 @RestController
 @RequestMapping("/api/restaurants")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://restaurant-management-frontend.vercel.app"})
 public class RestaurantController {
 
     private final RestaurantRepository repository;
